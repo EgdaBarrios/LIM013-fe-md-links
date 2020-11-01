@@ -31,7 +31,7 @@ Ejecutar la aplicación de la siguiente manera a través de la terminal:
 md-links <path-to-file>
 ``` 
 Por ejemplo:
-![Ejecutable por default](src/images/Ejecutable-por-default.JPG)
+![Ejecutable por default](src/images/Ejecutable-por-default.jpg)
 
 El comportamiento por defecto/default identifica el archivo markdown (a partir de la ruta que recibe como argumento), lo analiza e imprime los links que vaya encontrando, junto con la ruta del archivo donde aparece y el texto que hay dentro del link.
 
