@@ -91,7 +91,7 @@ Para este ejercicio, debimos alejarnos un poco del navegador para construir un p
 
 
 ### Diagrama de Flujo
-![diagrama de flujo](src\images\diagrama_de_flujo.jpg)
+![diagrama de flujo](/src/images/diagrama_de_flujo.jpg)
 
 
 ### Pseudocódigo
