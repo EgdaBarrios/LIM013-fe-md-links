@@ -1,0 +1,55 @@
+{
+  "name": "md-links",
+  "version": "1.0.0",
+  "description": "Markdown link validator",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest --verbose --coverage",
+    "eslint": "eslint --ext .js src/ test/",
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EgdaBarrios/LIM013-fe-md-links.git"
+  },
+  "keywords": [
+    "npm",
+    "markdown",
+    "link",
+    "validator"
+  ],
+  "author": "Egda Barrios",
+  "license": "ISC",
+  "bin": {
+    "md-links": "../lib/cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/EgdaBarrios/LIM013-fe-md-links/issues"
+  },
+  "homepage": "https://github.com/EgdaBarrios/LIM013-fe-md-links#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "colors": "^1.4.0",
+    "commander": "^6.1.0",
+    "console.table": "^0.10.0",
+    "markdown-it": "^11.0.1",
+    "marked": "^1.2.0",
+    "node-fetch": "^2.6.1",
+    "prompt": "^1.0.0"
+  }
+}
