@@ -31,7 +31,7 @@ Ejecutar la aplicación de la siguiente manera a través de la terminal:
 md-links <path-to-file>
 ``` 
 Por ejemplo:
-![Ejecutable por default](src/images/Ejecutable-por-default.jpg)
+![Ejecutable por default](src\images\default.jpg)
 
 El comportamiento por defecto/default identifica el archivo markdown (a partir de la ruta que recibe como argumento), lo analiza e imprime los links que vaya encontrando, junto con la ruta del archivo donde aparece y el texto que hay dentro del link.
 
@@ -41,7 +41,7 @@ El comportamiento por defecto/default identifica el archivo markdown (a partir d
 md-links <path-to-file> --validate
 ``` 
 Por ejemplo:
-![Ejecutable con opción --validate](src\images\Ejecutable-con-opción---validate.jpg)
+![Ejecutable con opción --validate](src\images\validate.jpg)
 
 Esta opción valida si el link funciona o no.
 
@@ -51,7 +51,7 @@ Esta opción valida si el link funciona o no.
 md-links <path-to-file> --stats
 ``` 
 Por ejemplo:
-![Ejecutable con opción --stats](src\images\Ejecutable-con-opción---stats.jpg)
+![Ejecutable con opción --stats](src\images\stats.jpg)
 
 Esta opción imprime estadísticas básicas sobre los links.
 
@@ -61,7 +61,7 @@ Esta opción imprime estadísticas básicas sobre los links.
 md-links <path-to-file> --stats --validate
 ``` 
 Por ejemplo:
-![Ejecutable con opción --stats --validate](src\images\Ejecutable-con-opción---stats---validate.jpg)
+![Ejecutable con opción --stats --validate](src\images\stats_validate.jpg)
 
 Al combinar ambas opciones, se obtenen estadísticas que necesiten de los resultados de la validación.
 
