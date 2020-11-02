@@ -95,56 +95,58 @@ Para este ejercicio, debimos alejarnos un poco del navegador para construir un p
 
 
 ### Pseudocódigo
-1. Instalar módulo vía npm install --global Egda-Barrios/md-links. 
-2. Ejecutar invocando en la línea de comando como una interfaz que podamos importar con   require para usarlo programáticamente: 
+```sh
+1.Instalar módulo vía npm install --global Egda-Barrios/md-links. 
+2.Ejecutar invocando en la línea de comando como una interfaz que podamos importar con   require para usarlo programáticamente: 
 const mdLinks = require("md-links");
-3. Imprime en la interfaz Mensaje de Bienvenida/ explicativo.
-4. CLI: Usuario ingresa ruta de archivo/directorio.
-  4.1. <path-to-file>: standard output
-	  4.1.1. Identificación de la ruta de acceso:
-		  4.1.1.1. Válida: Si
-			  4.1.1.1.1. Absoluta> Ir a 4.1.2.
-        4.1.1.1.2. Relativa: 
-          4.1.1.1.2.1. Convertir a absoluta en relación al directorio desde donde se invoca node (current working directory).
-          4.1.1.1.2.2.> Ir a 4.1.2.
-			4.1.1.2. Válida: No (Inválida):
-				4.1.1.2.1. Imprime Mensaje de alerta: Ruta inválida!
-		4.1.2. Identificación de archivo o directorio:
-			4.1.2.1. Archivo:
-				4.1.2.1.1> Ir a 4.1.3.
-			4.1.2.2. Directorio:
-				4.1.2.2.1. Extrae la información del directorio.
-				4.1.2.2.2> Ir a 4.1.3.
-		4.1.3. Búsqueda e identificación de archivos.md: Es archivo.md?
-			4.1.3.1. Si> Ir a 4.1.4.
-			4.1.3.2. No:
-				4.1.3.2.1. Ingresar nueva ruta> 4.1.
-		4.1.4. Análisis de(los) archivo(s) .md
-			4.1.4.1. Si encuentra link:
-        4.1.4.1.1. Imprime ruta + link + texto.
-        4.1.4.1.2. Ingresar nueva ruta> 4.1.
-        4.1.4.1.3. Fin.
-      4.1.4.2. No encuentra link:
-				4.1.4.2.1. Imprime Mensaje de alerta: No hay coincidencias!
-        4.1.4.2.2. Ingresar nueva ruta> 4.1.
-        4.1.4.2.3. Fin.
-  4.2. <path-to-file> --validate: Función que recorre la lista para verificar el estado de los enlaces: Hace petición HTTP:
-	  4.2.1. Flujo del standard output: Array de tres propiedades +
-    4.2.2. Retorna OK, si el link resulta en una redirección a una URL que responde ok. Retorna FAIL, si no.
-    4.2.3. Ingresar nueva ruta> 4.1.
-    4.2.4. Fin.
-  4.3. <path-to-file> --stats:
-    4.3.1. Flujo del standard output: Array de tres propiedades +
-    4.3.2. Imprime stats (cantidad de links y cantidad de links únicos).
-    4.3.3. Ingresar nueva ruta> 4.1.
-    4.4.4. Fin.
-  4.4. <path-to-file> --stats --validate:
-    4.4.1. Flujo del standard output: Array de tres propiedades +
-    4.4.2. Imprime stats (cantidad de links y cantidad de links únicos) +
-    4.4.3. Estado de links (rotos).
-    4.3.4. Ingresar nueva ruta> 4.1.
-    4.4.5. Fin.		
-5. [FIN]> Salir.
+3.Imprime en la interfaz Mensaje de Bienvenida/ explicativo.
+4.CLI: Usuario ingresa ruta de archivo/directorio.
+  4.1.<path-to-file>: standard output
+	  4.1.1.Identificación de la ruta de acceso:
+		  4.1.1.1.Válida: Si
+			  4.1.1.1.1.Absoluta> Ir a 4.1.2.
+        4.1.1.1.2.Relativa: 
+          4.1.1.1.2.1.Convertir a absoluta en relación al directorio desde donde se invoca node (current working directory).
+          4.1.1.1.2.2.>Ir a 4.1.2.
+			4.1.1.2.Válida: No (Inválida):
+				4.1.1.2.1.Imprime Mensaje de alerta: Ruta inválida!
+		4.1.2.Identificación de archivo o directorio:
+			4.1.2.1.Archivo:
+				4.1.2.1.1>Ir a 4.1.3.
+			4.1.2.2.Directorio:
+				4.1.2.2.1.Extrae la información del directorio.
+				4.1.2.2.2>Ir a 4.1.3.
+		4.1.3.Búsqueda e identificación de archivos.md: Es archivo.md?
+			4.1.3.1.Si> Ir a 4.1.4.
+			4.1.3.2.No:
+				4.1.3.2.1.Ingresar nueva ruta> 4.1.
+		4.1.4.Análisis de(los) archivo(s) .md
+			4.1.4.1.Si encuentra link:
+        4.1.4.1.1.Imprime ruta + link + texto.
+        4.1.4.1.2.Ingresar nueva ruta> 4.1.
+        4.1.4.1.3.Fin.
+      4.1.4.2.No encuentra link:
+				4.1.4.2.1.Imprime Mensaje de alerta: No hay coincidencias!
+        4.1.4.2.2.Ingresar nueva ruta> 4.1.
+        4.1.4.2.3.Fin.
+  4.2.<path-to-file> --validate: Función que recorre la lista para verificar el estado de los enlaces: Hace petición HTTP:
+	  4.2.1.Flujo del standard output: Array de tres propiedades +
+    4.2.2.Retorna OK, si el link resulta en una redirección a una URL que responde ok. Retorna FAIL, si no.
+    4.2.3.Ingresar nueva ruta> 4.1.
+    4.2.4.Fin.
+  4.3.<path-to-file> --stats:
+    4.3.1.Flujo del standard output: Array de tres propiedades +
+    4.3.2.Imprime stats (cantidad de links y cantidad de links únicos).
+    4.3.3.Ingresar nueva ruta> 4.1.
+    4.4.4.Fin.
+  4.4.<path-to-file> --stats --validate:
+    4.4.1.Flujo del standard output: Array de tres propiedades +
+    4.4.2.Imprime stats (cantidad de links y cantidad de links únicos) +
+    4.4.3.Estado de links (rotos).
+    4.3.4.Ingresar nueva ruta> 4.1.
+    4.4.5.Fin.		
+5. [FIN]>Salir.
+```
 
 
 ### Board
