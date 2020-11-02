@@ -138,12 +138,12 @@ const mdLinks = require("md-links");
     4.3.1. Flujo del standard output: Array de tres propiedades +
     4.3.2. Imprime stats (cantidad de links y cantidad de links únicos).
     4.3.3. Ingresar nueva ruta> 4.1.
-    4.4.4. Fin.
+    4.3.4. Fin.
   4.4. <path-to-file> --stats --validate:
     4.4.1. Flujo del standard output: Array de tres propiedades +
     4.4.2. Imprime stats (cantidad de links y cantidad de links únicos) +
     4.4.3. Estado de links (rotos).
-    4.3.4. Ingresar nueva ruta> 4.1.
+    4.4.4. Ingresar nueva ruta> 4.1.
     4.4.5. Fin.		
 5. [FIN]> Salir.
 ``` 
