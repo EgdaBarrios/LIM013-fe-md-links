@@ -95,6 +95,7 @@ Para este ejercicio, debimos alejarnos un poco del navegador para construir un p
 
 
 ### Pseudocódigo
+```sh
 1. Instalar módulo vía npm install --global Egda-Barrios/md-links. 
 2. Ejecutar invocando en la línea de comando como una interfaz que podamos importar con   require para usarlo programáticamente: 
 const mdLinks = require("md-links");
@@ -145,6 +146,7 @@ const mdLinks = require("md-links");
     4.3.4. Ingresar nueva ruta> 4.1.
     4.4.5. Fin.		
 5. [FIN]> Salir.
+``` 
 
 
 ### Board
