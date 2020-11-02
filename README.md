@@ -95,59 +95,7 @@ Para este ejercicio, debimos alejarnos un poco del navegador para construir un p
 
 
 ### Pseudocódigo
-```sh
-  * Instalar módulo vía npm install --global Egda-Barrios/md-links. 
-* Ejecutar invocando en la línea de comando como una interfaz que podamos importar con   require para usarlo programáticamente: 
-const mdLinks = require("md-links");
-* Imprime en la interfaz Mensaje de Bienvenida/ explicativo.
-* CLI: Usuario ingresa ruta de archivo/directorio.
-        * <path-to-file>: standard output
-	              * Identificación de la ruta de acceso:
-		                    * Válida: Si
-			                          * Absoluta> Ir al siguiente paso.
-                                * Relativa: 
-                                        * Convertir a absoluta en relación al directorio desde donde se invoca node (current working directory).
-                                        * Ir al siguiente paso.
-			                  * Válida: No (Inválida):
-				                        * Imprime Mensaje de alerta: Ruta inválida!
-		            * Identificación de archivo o directorio:
-			                  * Archivo:
-				                        * Ir al siguiente paso.
-			                  * Directorio:
-				                        * Extrae la información del directorio.
-				                        * Ir al siguiente paso.
-		            * Búsqueda e identificación de archivos.md: Es archivo.md?
-			                  * Si: 
-                                * Ir al siguiente paso.
-			                  * No:
-				                        * Ingresar nueva ruta.
-		            * Análisis de(los) archivo(s) .md
-			                  * Si encuentra link:
-                                * Imprime ruta + link + texto.
-                                * Ingresar nueva ruta.
-                                * Fin.
-                        * No encuentra link:
-				                        * Imprime Mensaje de alerta: No hay coincidencias!
-                                * Ingresar nueva ruta.
-                                * Fin.
-        * <path-to-file> --validate: Función que recorre la lista para verificar el estado de los enlaces: Hace petición HTTP:
-	              * Flujo del standard output: Array de tres propiedades +
-                * Retorna OK, si el link resulta en una redirección a una URL que responde ok. Retorna FAIL, si no.
-                * Ingresar nueva ruta.
-                * Fin.
-        * <path-to-file> --stats:
-                * Flujo del standard output: Array de tres propiedades +
-                * Imprime stats (cantidad de links y cantidad de links únicos).
-                * Ingresar nueva ruta.
-                * Fin.
-        * <path-to-file> --stats --validate:
-                * Flujo del standard output: Array de tres propiedades +
-                * Imprime stats (cantidad de links y cantidad de links únicos) +
-                * Estado de links (rotos).
-                * Ingresar nueva ruta.
-                * Fin.		
-* [FIN]>Salir.
-```
+![Pseudocodigo](/src/images/Pseudocodigo.jpg)
 
 
 ### Board
